@@ -8,6 +8,7 @@
 //ABOVE THE GROUND AND INCLINED AT AN EXTRA ANGLE OF 10 DEGREE TO THE PERPENDICULAR TO THE STICK
 //THE FINAL ULTRASONIC SENSOR FACING PARALLEL TO THE GROUND IS PLACED AT A DISTANCE OF 80 CM
 //ABOVE THE GROUND
+
 #define trigStraight1 13
 #define echoStraight1 12
 #define trigAngled1 11
@@ -18,6 +19,7 @@
 #define echoStraight2 6
 #define buzzer 3
 #define buzzer2 5
+
 void setup()
 {
   pinMode(trigStraight1, OUTPUT);
@@ -71,10 +73,12 @@ void loop()
   
   //BUZZER TRIAL
   //tone(buzzer, 300, 100); --Success but the tone is not nice
+  
   //Change the tone for each single notification
+  
   noTone(buzzer);
   noTone(buzzer2);
-  if((distHor1>22)&&(distHor1<31)) {  //To find if the obstacle is something full or just a small obstacle that just hits the legs
+  if((distHor1>22)&&(distHor1<31)) {                 //To find if the obstacle is something full or just a small obstacle that just hits the legs
     if((distHor2>62)&&(distHor2<69)){
       tone(buzzer, 600, 300);
       delay(500);
@@ -91,17 +95,19 @@ void loop()
     delay(500);
     noTone(buzzer);
   }
+  
   //TO CHECK FOR ELEVATED OR LOWERED GROUND
-  if(distAng1>(distAng2/0.766)){       //To notify that we are going from a upper to lower surface
+  
+  if(distAng1>(distAng2/0.766)){                    //To notify that we are going from a upper to lower surface
     if(distAng1>123)
     {
-      tone(buzzer2, 1500, 1000);		   //If the depth is more than 23cm in height from the present ground, this alarm rings
+      tone(buzzer2, 1500, 1000);		                //If the depth is more than 23cm in height from the present ground, this alarm rings
       delay(500);
       noTone(buzzer2);
     }
     else
     {
-      tone(buzzer2, 1000, 400);           //Therefore the tone is going from high to low
+      tone(buzzer2, 1000, 400);                    //Therefore the tone is going from high to low
       delay(200);
       noTone(buzzer2);
       tone(buzzer2, 100, 200);
@@ -109,8 +115,8 @@ void loop()
       noTone(buzzer2);
     }
   }
-  if(distAng1<(distAng2/0.766)){       //To notify that we are going from a lower to upper surface
-    tone(buzzer2, 100, 400);           //Therefore the tone is going from low to high
+  if(distAng1<(distAng2/0.766)){                  //To notify that we are going from a lower to upper surface
+    tone(buzzer2, 100, 400);                      //Therefore the tone is going from low to high
     delay(200);
     noTone(buzzer2);
     tone(buzzer2, 1000, 200);
@@ -119,6 +125,7 @@ void loop()
   }
   
   //Write a print statement to check if its working correctly
+  
   Serial.print(distHor1);
   Serial.print(" ");
   Serial.print(distHor2);
