@@ -35,7 +35,7 @@ Diagram representing the above explanation:
 Since we know the exact positions of all Ultrasonic sensors, we use trigonometry to find the distance detected in a typical case(leveled ground). The distance detected by Ultrasonic sensor three is then compared with the distance detected by Ultrasonic sensor four.
 
 
-## Conclusionn 
+## Conclusion
 
 This idea can be implemented by replacing Arduino Nano with NodeMCU and adding an app support that can spell out the obstacles. 
 This can also be accompanied by an PIR sensor to detect if the road is too busy with humans and to reduce the distance at which the sensor beeps that too in a low frequency to avoid noise pollution in public. 
