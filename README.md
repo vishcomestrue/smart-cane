@@ -19,7 +19,7 @@ SMART WALKING STICK can help resolve this issue.
 5. Connecting wires
 6. Buzzers 
 
-![Final-circuit](https://user-images.githubusercontent.com/84440397/118778308-95f76600-b8a7-11eb-8009-03a02fd17d0e.JPG)
+![RCS Final](https://user-images.githubusercontent.com/84440397/118788146-1d95a280-b8b1-11eb-86d2-a70a45803a74.png)
 
 ## Working
 --Add working in a more deep way--
