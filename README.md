@@ -23,3 +23,8 @@ SMART WALKING STICK can help resolve this issue.
 
 ## Working
 --Add working in a more deep way--
+
+## Conclusionn 
+
+This idea can be implemented by replacing Arduino Nano with NodeMCU and adding an app support that can spell out the obstacles. 
+This can also be accompanied by an PIR sensor to detect if the road is too busy with humans and to reduce the distance at which the sensor beeps that too in a low frequency to avoid noise pollution in public. 
