@@ -20,3 +20,6 @@ SMART WALKING STICK can help resolve this issue.
 6. Buzzers 
 
 ![Final-circuit](https://user-images.githubusercontent.com/84440397/118778308-95f76600-b8a7-11eb-8009-03a02fd17d0e.JPG)
+
+## Working
+--Add working in a more deep way--
